@@ -1,9 +1,10 @@
 import type { StackScreenProps } from '@react-navigation/stack';
-import type { Paths } from '@/navigation/paths';
+
+import { RootsPath } from '@/navigation/pathsProducts';
 
 export type RootStackParamList = {
-  [Paths.Startup]: undefined;
-  [Paths.Example]: undefined;
+  [RootsPath.MAIN]: undefined;
+  [RootsPath.PROFILE]: undefined;
 };
 
 export type RootScreenProps<
